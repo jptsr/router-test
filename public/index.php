@@ -1,19 +1,15 @@
 <?php
-
-// namespace app;
+require __DIR__.'/../vendor/autoload.php';
 
 use app\src\controllers\ErrorController;
 use app\src\controllers\HomeController;
 use app\src\controllers\LoginController;
-
-require __DIR__.'/vendor/autoload.php';
 
 $url = $_SERVER['REQUEST_URI'];
 
     switch($url)
     {
         case '/connexion':
-            // echo 'connexion';
             $loginCtrl = new LoginController();
             $loginCtrl -> view();
             break;
@@ -40,11 +36,7 @@ $url = $_SERVER['REQUEST_URI'];
         case '/nouvelle-facture':
             break;
         default:
-            // echo 'bou';
-            
             $error = new ErrorController();
             $error -> view();
-
-            // require 'public/views/error.php'; // OK-views-avec-layout + OK-switch
             break;
     }

@@ -7,7 +7,6 @@ namespace app\src\controllers;
 
         public function view()
         {
-            // echo 'view';
-            return require '../../public/views/login.php';
+            require __DIR__.'/../../public/views/login.php';
         }
     }
