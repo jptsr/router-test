@@ -2,10 +2,12 @@
 
 namespace app\src\controllers;
 
-    class HomeController
+class HomeController
+{
+    public function view()
     {
-        public function view()
-        {
-            require __DIR__.'/../../public/views/home.php';
-        }
+        // appeler la validation et afficher si validation ok
+        
+        require __DIR__.'/../../public/views/home.php';
     }
+}

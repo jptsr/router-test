@@ -5,3 +5,7 @@
 <?php
 $content = ob_get_clean();
 require 'layout.php';
+
+if (isset( $_POST['submit'] )) {
+    echo $_POST['bla'];
+}

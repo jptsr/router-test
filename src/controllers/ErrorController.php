@@ -2,11 +2,11 @@
 
 namespace app\src\controllers;
 
-    class ErrorController
+class ErrorController
+{
+    public function view()
     {
-        public function view()
-        {
-            // echo 'blabl';
-            require __DIR__. '/../../public/views/error.php';
-        }
+        // echo 'blabl';
+        require __DIR__. '/../../public/views/error.php';
     }
+}

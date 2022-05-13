@@ -2,11 +2,10 @@
 
 namespace app\src\controllers;
 
-    class LoginController
+class LoginController
+{
+    public function view()
     {
-
-        public function view()
-        {
-            require __DIR__.'/../../public/views/login.php';
-        }
+        require __DIR__.'/../../public/views/login.php';
     }
+}
