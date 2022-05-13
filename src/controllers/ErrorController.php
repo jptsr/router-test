@@ -7,6 +7,6 @@ namespace app\src\controllers;
         public function view()
         {
             // echo 'blabl';
-            return require '../../public/views/error.php';
+            require __DIR__. '/../../public/views/error.php';
         }
     }
